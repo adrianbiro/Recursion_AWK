@@ -29,6 +29,9 @@ BEGIN {
 # 24 discs in 16777215 moves.
 # 25 discs in 33554431 moves.
 # 27 discs in 134217727 moves.
+## moves per disc formula 2^n-1
+# $ bc <<< 'define moves(n) {return 2^n - 1}; moves(27);'
+# 134217727
 
 # $ awk -f recursiveHanoi.awk
 # Enter number of discs to calculate moves: 5
